@@ -10,12 +10,6 @@ function General() {
         <Ticket></Ticket>
         <Ticket></Ticket>
         <Ticket></Ticket>
-        <Ticket></Ticket>
-        <Ticket></Ticket>
-        <Ticket></Ticket>
-
-        <Ticket></Ticket>
-
       </div>
       <Btn></Btn>
     </div>

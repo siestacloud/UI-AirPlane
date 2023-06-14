@@ -8,9 +8,7 @@
   &__wrapper {
     grid-area: 1/2;
     @include f(center, center, column);
-
   }
-
 
   &__row {
     width: 100%;
@@ -21,14 +19,13 @@
     margin: 10px 0px;
     @include f(flex-end, flex-end, column);
     gap: 10px;
-
     p {
       margin-right: 6px;
     }
   }
-
+  
   @media (max-width: 867px) {}
-
+  
 }
 
 // </ПОДВАЛ САЙТА>
