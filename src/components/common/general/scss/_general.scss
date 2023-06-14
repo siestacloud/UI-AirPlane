@@ -1,0 +1,12 @@
+.general {
+  grid-area: 1/3;
+  height: 4000px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  &__row {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+}

@@ -1,6 +1,7 @@
 .nav {
+  position: sticky;
+  top: 100px;
   @include f(space-around, baseline, row);
-
 
 
   &__btn {

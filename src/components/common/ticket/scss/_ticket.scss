@@ -1,0 +1,47 @@
+.ticket {
+
+  background-color: $lavanda;
+  border-radius: 20px;
+  padding: 20px 30px 20px 30px;
+  @include f(space-between, space-between, column);
+  gap: 20px;
+
+  &__row {
+    @include f(space-between, center, row);
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: $purple;
+  }
+
+  &__desc p {
+    &:first-child {
+      margin-bottom: 10px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      /* colors/lavender */
+
+      color: #858AE3;
+    }
+
+    &:last-child {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      /* colors/purple */
+
+      color: #4E148C;
+    }
+  }
+}

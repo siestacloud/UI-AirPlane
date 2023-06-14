@@ -1,5 +1,7 @@
+import General from "../common/general/general";
 import Menu from "../common/menu/menu";
 import { Nav } from "../common/nav/nav";
+import { Ticket } from "../common/ticket/ticket";
 
 export const Main = () => {
 
@@ -7,9 +9,7 @@ export const Main = () => {
     <main className='main'>
       <div className='main__wrapper'>
         <Menu />
-        <div className="main__general">
-          <Nav></Nav>
-        </div>
+        <General></General>
       </div>
     </main>
   );
