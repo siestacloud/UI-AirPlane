@@ -1,0 +1,64 @@
+.checkbox {
+  margin-bottom: 20px;
+
+  input {
+    display: none; // убираем деф чекбокс
+
+    // как только изменяется состояние скрытого чекбокса (label и checkbox связаны) изменят стиль псевдоэлемента before (это кастомная кнопка)
+    &:checked~.checkbox__label::before {
+      background-color: $lavanda;
+      background-size: 70%;
+    }
+  }
+
+
+  // стили для label
+  &__label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #858AE3;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+    padding-left: 45px;
+
+    // кастомный чекбокс
+    &:before {
+      content: "";
+      width: 25px;
+      height: 25px;
+
+      border: 1px solid #4E148C;
+      border-radius: 4px;
+
+  
+
+      position: absolute;
+      cursor: pointer;
+      z-index: 3;
+
+      // центрирую относительно lable
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+
+      //плавность при изменении элемента
+      transition: all 100ms ease-in-out;
+
+      background-image: url("../img/done.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 0%;
+    }
+    &-circle:before {
+      border-radius: 50%;
+      background-image: url("../img/ellipse.svg");
+
+    }
+
+  }
+}

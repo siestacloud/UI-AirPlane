@@ -1,0 +1,22 @@
+#root {
+  // overflow: hidden;
+  height: 100%;
+}
+
+
+
+// <ОБОЛОЧКА>
+.wrapper {
+  // color: $light;
+  min-height: 100%;
+  display: grid;
+  grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / minmax(80px, auto);
+  
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+
+

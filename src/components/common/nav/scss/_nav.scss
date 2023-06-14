@@ -1,0 +1,36 @@
+.nav {
+  @include f(space-around, baseline, row);
+
+
+
+  &__btn {
+    flex: 1 1;
+    border-radius: 20px;
+    background: #E8EBF2;
+    color: $purple;
+    
+    border: 1px solid #4E148C;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+    background: $purple;
+      color: #E8EBF2;
+    }
+  }
+
+
+}
+
+
+.border-mod-one {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.border-mod-two {
+  border-radius: 0px;
+}
+
+.border-mod-three {
+  border-radius: 0px 15px 15px 0px;
+}

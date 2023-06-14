@@ -1,0 +1,34 @@
+// <ПОДВАЛ САЙТА>
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
+
+  &__wrapper {
+    grid-area: 1/2;
+    @include f(center, center, column);
+
+  }
+
+
+  &__row {
+    width: 100%;
+    @include f(space-between, center, row);
+  }
+
+  &__col {
+    margin: 10px 0px;
+    @include f(flex-end, flex-end, column);
+    gap: 10px;
+
+    p {
+      margin-right: 6px;
+    }
+  }
+
+  @media (max-width: 867px) {}
+
+}
+
+// </ПОДВАЛ САЙТА>

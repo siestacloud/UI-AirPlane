@@ -1,0 +1,19 @@
+// <ОСНОВНОЙ БЛОК>
+
+.main {
+  grid-area: main;
+  &__wrapper {
+    display: grid;
+    grid-template: 1fr/4fr;
+    grid-template: 1fr/minmax(15px,1fr) minmax(10px,400px) minmax(10px,1000px) minmax(15px,1fr);
+  }
+
+
+  &__general {
+    grid-area: 1/3;
+    height: 4000px;
+    flex-basis: 75%;
+  }
+
+  @media (max-width: 867px) {}
+}

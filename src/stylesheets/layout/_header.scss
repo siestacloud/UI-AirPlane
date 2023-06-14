@@ -1,0 +1,21 @@
+// <ШАПКА САЙТА>
+.header {
+  z-index: 25;
+  padding: 7px 0px;
+  grid-area: header;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
+
+  background-color: #fff;
+
+  &__wrapper {
+    z-index: 10;
+    grid-area: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
