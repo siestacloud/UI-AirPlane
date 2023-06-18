@@ -26,12 +26,12 @@
 
 ## Table of Contents
 
-- [Check result](https://weather.siestacloud.ru/)
+- [Check result](https://siestacloud.github.io/UI-AirPlane)
 - [About](#about)
 - [Getting Started](#getting_started)
 ## 😉 Check result <a name = "Check result"></a>
-Итоговая реализация проекта доступна по ссылке 
-## 🧐 About <a name = "about"></a>
+Итоговая реализация проекта доступна  [по ссылке](https://siestacloud.github.io/UI-AirPlane)
+## 🧐 About <a name = "about"></a> 
 
 Проект выполнен в рамках технического задания модуля React
 
