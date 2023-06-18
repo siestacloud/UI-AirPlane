@@ -5,7 +5,7 @@
 
 
 <div align="center">
-<h3 align="center">UI Neon Shop</h3>
+<h3 align="center">Air Plane</h3>
 
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -16,12 +16,12 @@
 
 ---
 
-<p align="center"> Layout NeonShop web-interface
+<p align="center"> Layout Air Plane web-interface
     <br> 
 </p>
 
 
-# NeonLayout
+# Air Plane
 
 
 ## Table of Contents
@@ -30,7 +30,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 ## 😉 Check result <a name = "Check result"></a>
-Итоговая реализация проекта доступна по ссылке siestacloud.github.io/UI-NeonShop/
+Итоговая реализация проекта доступна по ссылке 
 ## 🧐 About <a name = "about"></a>
 
 Проект выполнен в рамках технического задания модуля React
@@ -41,7 +41,7 @@
 
 ###  Installing
 ```
-git clone  https://github.com/siestacloud/UI-NeonShop.git
+git clone  https://github.com/siestacloud/UI-AirPlane.git
 cd kanban-board/
 ```
 `npm`
