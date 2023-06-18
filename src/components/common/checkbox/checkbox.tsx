@@ -1,39 +1,51 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { FlightActionTypes } from '../../../types/flight';
+import { fetchFlightFilter } from '../../../store/action-creators/action-flight';
 
-export function Checkbox() {
 
-  // const [MenuState, setMenuState] = React.useState(false)
-  // const HandleEnableMenu = () => {
-  // setMenuState(!MenuState)
-  // }
-
+interface props {
+  enable: boolean
+  title: string
+}
+export function Checkbox({ enable,title }: props) {
+  const dispatch = useDispatch()
+  const HandleEnableFilter = () => {
+    dispatch({ type: FlightActionTypes.FILTER_BY_CONNECTION_AMOUNT, payload: title })
+    
+    dispatch(fetchFlightFilter())
+  }
 
   return (
-    // Checkbox, switch
     <div className="checkbox">
-      <input type="checkbox" name="check1" id="check1" />
-      <label htmlFor="check1" className='checkbox__label'>Текст чекбокса</label>
+      <input type="checkbox" name={title} id={title} checked={enable} onChange={HandleEnableFilter} />
+      <label htmlFor={title} className='checkbox__label'>{title}</label>
     </div>
-
   );
 }
 
 
-export function CheckboxCircle() {
+interface propsC {
+  title: string
+  enable: boolean
+  // companyID: number
 
-  // const [MenuState, setMenuState] = React.useState(false)
-  // const HandleEnableMenu = () => {
-  // setMenuState(!MenuState)
-  // }
+}
 
+export function CheckboxCircle({ title, enable }: propsC) {
+  const dispatch = useDispatch()
+
+
+  const HandleEnableFilter = () => {
+    dispatch({ type: FlightActionTypes.FILTER_BY_COMPANY, payload: title })
+    dispatch(fetchFlightFilter())
+  }
 
   return (
-    // Checkbox, switch
     <div className="checkbox">
-      <input type="checkbox" name="check1" id="check2" />
-      <label htmlFor="check2" className='checkbox__label checkbox__label-circle'>Текст чекбокса</label>
+      <input type="checkbox" name={title} id={title} checked={enable} onChange={HandleEnableFilter} />
+      <label htmlFor={title} className='checkbox__label checkbox__label-circle'>{title}</label>
     </div>
-
   );
 }
 

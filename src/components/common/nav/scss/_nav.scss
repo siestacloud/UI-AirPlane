@@ -9,13 +9,19 @@
     border-radius: 20px;
     background: #E8EBF2;
     color: $purple;
-    
+
     border: 1px solid #4E148C;
     padding: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    &:hover{
-    background: $purple;
+
+    &:hover {
+      background: #9360ca;
+      color: #E8EBF2;
+    }
+
+    &-color {
+      background: $purple;
       color: #E8EBF2;
     }
   }

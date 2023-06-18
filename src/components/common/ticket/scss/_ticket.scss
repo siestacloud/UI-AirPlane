@@ -20,6 +20,7 @@
 
   &__desc p {
     &:first-child {
+
       margin-bottom: 10px;
       font-family: 'Inter';
       font-style: normal;
@@ -40,7 +41,7 @@
       line-height: 19px;
 
       /* colors/purple */
-
+      width:150px;
       color: #4E148C;
     }
   }
